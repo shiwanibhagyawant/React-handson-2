@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  color: #fff;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  height: 100vh;
+  
+  background: url(https://images.unsplash.com/photo-1625225230517-7426c1be750c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvcm18ZW58MHx8MHx8&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+h1{
+  text-align: center;
+  color: rgb(148, 224, 230);
+  text-shadow: 0 5px 0px black,0 0 10px black,0 0 15px #0073e6,0 0 20px;
 }
 
-.App-link {
-  color: #61dafb;
+form{
+  margin-top: 60px;
+  height: 250px;
+  width: 300px;
+  text-align: center;
+  background: rgb(196, 144, 144);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:30.5%;
+  left: 50%;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding:10px;
+  border-radius: 10px;
 }
+input{
+  caret-color: darkslateblue;
+  color:darkgoldenrod;
+  border-radius: 5px;
+  font-size: small;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* text-align: center; */
+}
+/*  */
+label{
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+  color:white;
+}
+button{
+  background-color:navy;
+  padding: 4px;
+  border-radius: 5px;
+}
+button:hover{
+  cursor: grab;
+  background-color:rgb(81, 197, 87);
+}
+.data{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 65%;
+  max-height:130px;
+  max-width:85%;
+  background-color:gray;
+  padding: 15px;
+  background: rgba(255,255,255,0.13);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  border-radius: 10px;
+}
+.data span{
+  padding: 5px;
+  background-color: rgb(46, 173, 104);
+  border: 2px double rgba(255,255,255,0.2);
+  border-radius: 10px;
+  line-break:normal
 }
